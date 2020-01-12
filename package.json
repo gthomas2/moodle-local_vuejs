@@ -1,0 +1,31 @@
+{
+  "description": "Npm packages required for local/tlcore grunt tasks.",
+  "private": true,
+  "devDependencies": {
+    "@babel/cli": "^7.5.0",
+    "@babel/core": "^7.5.4",
+    "@babel/plugin-transform-modules-amd": "^7.5.0",
+    "@babel/preset-env": "^7.5.4",
+    "core-js": "^3.1.4",
+    "grunt": "^1.0.4",
+    "grunt-autoprefixer": "^3.0.4",
+    "grunt-contrib-jshint": "^2.1.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-exec": "^3.0.0",
+    "grunt-load-gruntfile": "0.0.2",
+    "grunt-sass": "^3.0.2",
+    "grunt-sass-lint": "^0.2.4",
+    "vue": "^2.6.10",
+    "vue-template-compiler": "^2.6.10"
+  },
+  "dependencies": {
+    "@vue/cli-service": "^3.9.2",
+    "node": "^12.6.0",
+    "sass": "^1.22.5",
+    "vue-contenteditable-directive": "^1.2.0",
+    "vue-wysiwyg": "^1.7.2"
+  },
+  "browserslist": [
+    "defaults"
+  ]
+}
