@@ -66,13 +66,15 @@ function local_vuejs_before_standard_html_head() {
     
     if (M.cfg.jsrev && M.cfg.jsrev == -1) {
         // Use the developer version.
-        window.local_vuejs_req_config('local_vuejs', 'vendorjs/vue')
+        window.local_vuejs_req_config('local_vuejs', 'vendorjs/vue');
     } else {
         // Use the minified / CDN version.
         window.local_vuejs_req_config('local_vuejs', 'vendorjs/vue-min', {
             cdnURL: 'https://cdn.jsdelivr.net/npm/vue@2.5.16/dist/vue.min'
         });  
     }
+    
+    window.local_vuejs_req_config('local_vuejs', 'vendorjs/vuex');
 JS;
 
     $PAGE->requires->js_init_code($jscode);

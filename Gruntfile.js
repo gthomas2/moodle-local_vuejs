@@ -132,6 +132,8 @@ module.exports = function(grunt) {
                 cd $compDir; vue-cli-service build --target lib --name $compName {$compName}.vue;
                 mv $compDir/dist $compDir/modern;
                 cd $workingDir; npx babel $compDir/modern -d $compDir/dist;
+                cd $compDir/modern;
+                find . -not -name "*.js" -not -name "*.js.map" -not -name "." -exec cp {} $compDir/dist \\;
                 rm -rf $compDir/modern
 CMD;
                 echo shell_exec($cmd);
