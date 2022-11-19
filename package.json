@@ -19,7 +19,7 @@
     "vue-template-compiler": "^2.6.10"
   },
   "dependencies": {
-    "@vue/cli-service": "^3.9.2",
+    "@vue/cli-service": "^5.0.8",
     "node": "^12.6.0",
     "sass": "^1.22.5",
     "vue-contenteditable-directive": "^1.2.0",
